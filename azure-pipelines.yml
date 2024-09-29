@@ -22,7 +22,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      name: $(poolName)  # Use your self-hosted agent pool name (Default)
+      name: Default # Use your self-hosted agent pool name (Default)
     steps:
     - task: Docker@2
       displayName: Build and push an image to container registry
