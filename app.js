@@ -15,6 +15,8 @@ async function getApp() {
   // Use AZURE_COSMOS_CONNECTIONSTRING if available, otherwise fall back to MONGODB_URI
   const mongoUri = process.env.AZURE_COSMOS_CONNECTIONSTRING || process.env.MONGODB_URI;
 
+  //one line
+
   mongoose.connect(mongoUri).then(() => {
     console.log('Connected to database');
   }).catch((err) => {
